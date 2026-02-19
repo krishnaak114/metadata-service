@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env.local
+.env.production
+
+# Keep the example but ignore actual secrets
+.env
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Alembic
+# (versions/ are committed; generated .pyc are not)
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
