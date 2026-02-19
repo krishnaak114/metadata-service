@@ -43,7 +43,7 @@ def add_lineage(
         db.refresh(edge)
         return LineageEdgeResponse.model_validate(edge)
     except CycleError as exc:
-        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc))
+        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_CONTENT, detail=str(exc))
     except ConflictError as exc:
         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=str(exc))
     except NotFoundError as exc:
